@@ -1,0 +1,175 @@
+{
+	"info": {
+		"_postman_id": "033ba01f-c5ff-4b43-b73e-8be0a560c7fd",
+		"name": "whitebox bank",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3085244"
+	},
+	"item": [
+		{
+			"name": "open account",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"accountHolderId\": \"bank2\",\n    \"accountType\": \"SAVINGS\",\n    \"openingBalance\": 10,\n    \"creditLimit\" : 200\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:2000/api/v1/openBankAccount",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2000",
+					"path": [
+						"api",
+						"v1",
+						"openBankAccount"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "payment",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"amount\" : 20,\n    \"transferTo\" : \"8b52b9a8-2b9a-48d9-8c74-b0f9009b56c4\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:2000/api/v1/depositFunds/03198b71-0ee0-4a12-a314-d63133a94d41",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2000",
+					"path": [
+						"api",
+						"v1",
+						"depositFunds",
+						"03198b71-0ee0-4a12-a314-d63133a94d41"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get Accounts whose balance<0",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:2000/api/v1/bankAccountLookup/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2000",
+					"path": [
+						"api",
+						"v1",
+						"bankAccountLookup",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get Account With Balance",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:2000/api/v1/bankAccountLookup/account/03198b71-0ee0-4a12-a314-d63133a94d41",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2000",
+					"path": [
+						"api",
+						"v1",
+						"bankAccountLookup",
+						"account",
+						"03198b71-0ee0-4a12-a314-d63133a94d41"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get Account Transaction Geven Date",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:2000/api/v1/bankAccountLookup/account/03198b71-0ee0-4a12-a314-d63133a94d41",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2000",
+					"path": [
+						"api",
+						"v1",
+						"bankAccountLookup",
+						"account",
+						"03198b71-0ee0-4a12-a314-d63133a94d41"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
