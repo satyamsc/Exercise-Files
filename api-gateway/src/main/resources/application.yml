@@ -1,0 +1,21 @@
+server:
+  port: 2000
+
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: bankAccCmdApi-OpenAccount
+          uri: http://localhost:9091/api/v1/openBankAccount
+          predicates:
+            - Path=/api/v1/openBankAccount
+
+        - id: bankAccCmdApi-InitiatePayment
+          uri: http://localhost:9091/api/v1/initiatePayment/**
+          predicates:
+            - Path=/api/v1/initiatePayment/**
+
+        - id: bankAccQueryApi
+          uri: http://localhost:9092/api/v1/bankAccountLookup/**
+          predicates:
+            - Path=/api/v1/bankAccountLookup/**

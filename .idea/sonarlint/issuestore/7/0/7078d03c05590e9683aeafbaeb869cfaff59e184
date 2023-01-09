@@ -1,0 +1,11 @@
+
+A
+java:S2160"+Override the "equals" method in this class.(•óÒ
+e
+java:S1128"HRemove this unused import 'com.fasterxml.jackson.annotation.JsonIgnore'.(ş‘‹„8ßõØ›Ù0
+o
+java:S1128"RRemove this unused import 'com.fasterxml.jackson.annotation.JsonIgnoreProperties'.(ô’ˆî8ßõØ›Ù0
+f
+java:S1128"IRemove this unused import 'com.fasterxml.jackson.annotation.JsonInclude'.(şîÌ8àõØ›Ù0
+h
+java:S1128"KRemove this unused import 'com.springbank.bankacc.core.models.BankAccount'.(¾˜Ú´8àõØ›Ù0

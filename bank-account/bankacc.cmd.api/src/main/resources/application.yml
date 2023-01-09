@@ -1,0 +1,11 @@
+server:
+  port: 9091
+
+spring:
+  jackson:
+    serialization:
+      FAIL_ON_EMPTY_BEANS: false
+
+logging:
+  level:
+    root: info
