@@ -1,6 +1,4 @@
 
-~
-Napi-gateway/src/main/java/com/springbank/apigateway/ApiGatewayApplication.java,b/4/b435c77b40d284b42e9eb370fc48d7f71ac721a9
 â
 Ybank-account/bankacc.core/src/main/java/com/springbank/bankacc/core/dto/BaseResponse.java,6/2/62b3625dc073b572de483a2c857f27c28e5ba5e4
 Q
@@ -19,10 +17,6 @@ obank-account/bankacc.query.api/src/main/java/com/springbank/bankacc/query/api/q
 Åbank-account/bankacc.query.api/src/main/java/com/springbank/bankacc/query/api/queries/FindAccountAllTransactionsForGivenDate.java,4/3/431dd5debd38a31b76b52d3ebff08a30846469a6
 ü
 obank-account/bankacc.query.api/src/main/java/com/springbank/bankacc/query/api/handlers/AccountQueryHandler.java,5/4/546fff28cad100d4e5c4de16bb0f223aababc7f1
-ö
-jbank-account/bankacc.query.api/src/main/java/com/springbank/bankacc/query/api/BankAccQueryApplication.java,e/0/e0bcffd40a011939576f22d10248df80fe694698
-ò
-hbank-account/bankacc.cmd.api/src/main/java/com/springbank/bankacc/cmd/api/BankAccCommandApplication.java,b/7/b742d120ace3f09155a7cb7df8b4b4804974dd4f
 ã
 [bank-account/bankacc.core/src/main/java/com/springbank/bankacc/core/models/AccountType.java,4/5/45945900fc3ecf3fd8c7860d2c8785a557443136
 è

@@ -1,0 +1,23 @@
+version: "3.3"
+services:
+  axon-server:
+    # docker run -d --name my-axon-server -p 8024:8024 -p 8124:8124 axoniq/axonserver
+    # docker run -d --name axon-server -p 8024:8024 -p 8124:8124 --restart always axoniq/axonserver:latest
+    image: axoniq/axonserver:latest
+    container_name: my-axon-server
+    ports:
+      - 8024:8024
+      - 8124:8124
+    restart: always
+   #docker run -it -d --name mysql-container -p 3306:3306 -e MYSQL_ROOT_PASSWORD="bank" --restart always -v mysql_data_container:/var/lib/mysql mysql:latest
+  mysql:
+    image: mysql:latest
+    container_name: mysql-container
+    volumes:
+      - mysql-data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: bank
+    ports:
+      - 3306:3306
+volumes:
+  mysql-data:
