@@ -3,7 +3,7 @@
 
 - Exercise File contains two projects i.e  (1). api-gateway project. (2). bank-account project.
 
--- Build and install all Projects by using mvn clean install
+-- Projects
 
     a.   api-gateway is Spring boot application. An API gateway is rest api that sits in front of an API (Application Programming Interface) and serves as a single point of access for microservices and back-end APIs that are specified.
 
@@ -15,9 +15,10 @@
 
 
     1. Run the docker-compose file by using command "docker-compose up".
-    2  Start api-gateway spring boot project.
-    3. Start bankcc.cmd.api spring boot project.
-    4. Start bankcc.query.api spring boot project.
+    2. Build and install all Projects by using 'mvn clean install'
+    3  Start api-gateway spring boot project.
+    4. Start bankcc.cmd.api spring boot project.
+    5. Start bankcc.query.api spring boot project.
 
 
 - Open postman and add the collections (whitebox bank.postman_collection.json)
